@@ -8,6 +8,7 @@
 .navbar {
     background-color: white;
     margin-top: -50px;
+    margin-bottom: -10px;
     border-radius: 10px;
     box-sizing: content-box;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, -50px -40px 0px -26px rgba(0,0,0,0); 
@@ -22,11 +23,12 @@ html, body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+
 .navbar-brand {
-    position: relative;
     text-align: center;
     font-weight: bolder;
-    float: left;
+    margin-left: 500px
     padding: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -45,6 +47,7 @@ html, body {
     border-block-end-color: lightcoral;
      border-block-color: lightcora;
 }
+
 .apc {
     font-size: 20px;
     background: rgb(212, 191, 191);
@@ -62,6 +65,7 @@ html, body {
     box-shadow: 15px 10px 10px rgb(58, 21, 21); 
     border-block-end-color: lightcoral;
      border-block-color: lightcora;
+     @media (min-width: 576px);
 }
 
 .header {
@@ -140,14 +144,77 @@ img {
     border-radius: 10px;
 }
 
-@media {
-@include media-breakpoint-up(xs) { display: inline; }
-@include media-breakpoint-up(sm) { display: inline; }
-@include media-breakpoint-up(md) { display: inline; }
-@include media-breakpoint-up(lg) { display: inline; }
-@include media-breakpoint-up(xl) { display: inline; }
+@media only screen and (max-width:980px) {
+    nav {
+      margin-right: 5px;
+    }
+  }
 
+@media only screen and (max-width: 980px) {
+    .navbar-brand,
+    .row{
+        margin: 980px, 768px, 640px;
+    }
+    .apc{
+        max-width: 100%;
+    }
+    p{
+        max-width: 75%;
+    }
+    img{
+        width: 75%;
+    }
+    .footer{
+        max-height: 50%;
+    }
+    .header{
+        margin-right: 16px;
+    }
 }
+@media only screen and (max-width: 768px) {
+    .navbar-brand,
+    .row{
+        margin: 980px, 768px, 640px;
+    }
+    .apc{
+        max-width: 100%;
+    }
+    p{
+        max-width: 75%;
+    }
+    img{
+        width: 75%;
+    }
+    .footer{
+        max-height: 50%;
+    }
+    .header{
+        margin-right: 16px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .navbar-brand,
+    .row{
+        margin: 980px, 768px, 640px;
+    }
+    .apc{
+        max-width: 100%;
+    }
+    p{
+        max-width: 75%;
+    }
+    img{
+        width: 75%;
+    }
+    .footer{
+        max-height: 50%;
+    }
+    .header{
+        margin-right: 16px;
+    }
+}
+
+
 
 
 

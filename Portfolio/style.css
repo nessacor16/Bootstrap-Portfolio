@@ -22,15 +22,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
+    margin-top: 50px;
 }
 .navbar-brand {
-    position: relative;
     text-align: center;
     font-weight: bolder;
-    float: left;
+    margin-left: 500px
     padding: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 400px;
     text-shadow: 1px 1px rgb(17, 35, 56);: 2px;
     text-emphasis-color: rgb(132, 175, 52);
     background-color: rgb(40, 81, 119);
@@ -85,7 +87,6 @@ h2 {
      border-block-color: lightcora;
 }
 
-}
 .footer {
     bottom: 0;
     width: 100%;
@@ -104,3 +105,74 @@ h2 {
     border-block-color: lightcora; 
     border-radius: 10px;
 }   
+@media only screen and (max-width:980px) {
+    nav {
+      margin-right: 5px;
+    }
+  }
+
+@media only screen and (max-width: 980px) {
+    .navbar-brand {
+        margin-left: auto;
+    }
+    .apc, h2 {
+        margin: 980px, 768px, 640px;
+    }
+    p{
+        max-width: 75%;
+    }
+    img{
+        width: 75%;
+    }
+    .footer{
+        max-height: 50%;
+    }
+    .header{
+        margin-right: 16px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-brand,
+    .row{
+        margin: 980px, 768px, 640px;
+        margin-left: auto;
+    }
+    .apc{
+        max-width: 100%;
+    }
+    p{
+        max-width: 75%;
+    }
+    img{
+        width: 75%;
+    }
+    .footer{
+        max-height: 50%;
+    }
+    .header{
+        margin-right: 16px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .navbar-brand{ 
+        margin-left: auto;
+    }
+    .row{
+        margin: 980px, 768px, 640px;
+    }
+    .apc{
+        max-width: 75%;
+    }
+    p{
+        max-width: 75%;
+    }
+    img{
+        width: 75%;
+    }
+    .footer{
+        max-height: 50%;
+    }
+    .header{
+        margin-right: 16px;
+    }
+}
